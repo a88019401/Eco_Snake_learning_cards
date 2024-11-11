@@ -21,7 +21,10 @@ export default function Product() {
   return (
     <div className={styles.container}>
       <motion.h1 layoutId="header">{product}</motion.h1>
+      <Link href="/">
+
       <div onClick={() => router.back()} className={styles["image-container"]}>
+        
         <motion.img
           layoutId={product}
           className={styles["big-image"]}
@@ -30,7 +33,7 @@ export default function Product() {
           whileHover={{ scale: 1.05 }}
         />
       </div>
-      
+      </Link>
       {/* 詳細資訊直接顯示 */}
       <motion.div
         initial={{ opacity: 0 }}
