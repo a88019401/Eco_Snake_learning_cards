@@ -37,7 +37,9 @@ export default function Home() {
           </Link>
         ))}
       </div>*/}
-
+        <Link href="https://eco-snake.vercel.app/">
+          <button className={styles["start-button"]}>進入小遊戲</button>
+        </Link>
     </div>
   );
 }

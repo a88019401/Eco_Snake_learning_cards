@@ -1,3 +1,4 @@
+/* 主容器樣式 */
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -7,45 +8,51 @@
   align-items: center;
   height: 100vh;
 }
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
+/* 產品容器 */
 .product-container {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap; /* 在較小螢幕上換行 */
+  justify-content: center; /* 讓內容在小螢幕上置中 */
 }
 
+/* 單個產品圖片 */
 .image {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  
-  border-radius:10%;
+  border-radius: 10%;
+  transition: transform 0.3s ease;
 }
 
+.image:hover {
+  transform: scale(1.05); /* 滑鼠懸停時輕微放大 */
+}
+
+/* 產品詳情頁的大圖片 */
 .big-image {
   width: 450px;
   height: 450px;
   object-fit: cover;
-  border-radius:10%;
+  border-radius: 10%;
+  transition: transform 0.3s ease;
 }
-/* 資訊區塊樣式 */
+
+.big-image:hover {
+  transform: scale(1.05); /* 滑鼠懸停時輕微放大 */
+}
+
+/* 資訊區塊 */
 .info {
   max-width: 600px;
-  padding: 30px;
+  padding: 20px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #333;
-  border-radius:10%;
-
+  border-radius: 10%;
 }
 
 /* 標題樣式 */
@@ -62,7 +69,7 @@
   line-height: 1.5;
 }
 
-/* 返回按鈕樣式 */
+/* 返回按鈕 */
 .back-button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -77,4 +84,81 @@
 
 .back-button:hover {
   background-color: #005bb5;
+}
+
+/* 開始遊戲按鈕 */
+.start-button {
+  background-color: #FFD700; /* 黃色背景 */
+  color: #2E2E2E; /* 深色文字 */
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: 2px solid #2E2E2E;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.start-button:hover {
+  background-color: #E5BE01; /* 懸停時的深黃色 */
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  /* 調整產品圖片大小 */
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .big-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* 資訊區塊文字大小調整 */
+  .info h2 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  /* 按鈕大小調整 */
+  .back-button,
+  .start-button {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* 手機端的產品圖片調整 */
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .big-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* 資訊區塊的字體縮小 */
+  .info h2 {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 12px;
+  }
+
+  /* 手機端的按鈕大小 */
+  .back-button,
+  .start-button {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
 }
