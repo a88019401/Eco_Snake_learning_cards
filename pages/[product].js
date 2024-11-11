@@ -28,7 +28,7 @@ export default function Product() {
         <motion.img
           layoutId={product}
           className={styles["big-image"]}
-          src={product + ".PNG"}
+          src={product + ".png"}
           animate={{ scale: 1 }}
           whileHover={{ scale: 1.05 }}
         />
