@@ -37,6 +37,7 @@
   object-fit: cover;
   border-radius: 10%;
   transition: transform 0.3s ease;
+
 }
 
 .big-image:hover {
@@ -53,7 +54,11 @@
   text-align: center;
   color: #333;
   border-radius: 10%;
+
 }
+
+
+
 
 /* 標題樣式 */
 .info h2 {

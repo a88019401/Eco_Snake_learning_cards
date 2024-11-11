@@ -44,7 +44,12 @@ export default function Product() {
         <h2>{productInfo[product]}</h2>
        {/*<p>這是 {product} 的詳細介紹，您可以根據需求在此添加更多資訊！</p>*/}
         <Link href="/">
-          <button className={styles["back-button"]}>返回主頁</button>
+          <motion.button 
+           className={styles["back-button"]}
+                    animate={{ scale: 1 }}
+                    whileHover={{ scale: 1.05 }}
+                    
+                    >返回主頁</motion.button>
         </Link>
       </motion.div>
     </div>
