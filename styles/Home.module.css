@@ -1,0 +1,80 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container {
+  display: flex;
+  gap: 16px;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  
+  border-radius:10%;
+}
+
+.big-image {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius:10%;
+}
+/* 資訊區塊樣式 */
+.info {
+  max-width: 600px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+  border-radius:10%;
+
+}
+
+/* 標題樣式 */
+.info h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 內文樣式 */
+.info p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* 返回按鈕樣式 */
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #005bb5;
+}
