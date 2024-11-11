@@ -14,7 +14,7 @@ export default function Home() {
               <motion.img
                 layoutId={product}
                 className={styles.image}
-                src={product + ".PNG"}
+                src={product + ".png"}
                 animate={{ scale: 1 }}
                 whileHover={{ scale: 1.1 }}
               />
