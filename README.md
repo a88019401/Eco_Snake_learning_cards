@@ -1,3 +1,7 @@
+# 環保貪吃蛇的回收物品介紹
+這是民國113年上學期的數位遊戲式學習設計課程的一個小小作品，老師想要我們的遊戲中添加回收物品介紹，我臨時在一個小時內寫出來的小作品xD
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
