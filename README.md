@@ -1,6 +1,6 @@
-# 環保貪吃蛇的回收物品介紹
+<img width="1247" alt="image" src="https://github.com/user-attachments/assets/b5277d3c-f745-4ae2-81f4-8cb06f0d1905" /># 環保貪吃蛇的回收物品介紹
 這是民國113年上學期的數位遊戲式學習設計課程的一個小小作品，老師想要我們的遊戲中添加回收物品介紹，我臨時在一個小時內寫出來的小作品xD
-
+![image]()
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
